@@ -27,7 +27,22 @@
         </div>
       </div>
       <div class="column">
-        <div class="project"></div>
+        <div class="project">
+          <div class="card">
+            <div class="card-content">
+              <div class="title">Vue chat</div>
+              <div class="content">Чат на vue.js и firebase</div>
+            </div>
+            <footer class="card-footer">
+              <div class="card-footer-item">
+                <a href="https://vue-chat-9da3b.firebaseapp.com/" target="_blank">Сайт</a>
+              </div>
+              <div class="card-footer-item">
+                <a href="https://github.com/Pupinia/vue-chat" target="_blank">Репозиторий</a>
+              </div>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
   </div>
