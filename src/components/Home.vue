@@ -8,7 +8,22 @@
             <div
               class="subtitle home__text"
             >Я программист-самоучка, увлечённый современными технологиями и обожаю узнавать новое. Верю, что хороший разработчик это постоянное обучение, сложные проекты и работа над обратной связью, что бы стать ещё лучше.</div>
-            <button class="button is-primary" @click="$router.push({name: 'projects'})">Мои работы</button>
+            <div class="columns is-mobile">
+              <div class="column is-9">
+                <button
+                  class="button is-primary"
+                  @click="$router.push({name: 'projects'})"
+                >Мои работы</button>
+              </div>
+              <div class="column is-3 is-pulled-right">
+                <a class="icon is-medium" href="https://github.com/Pupinia" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a class="icon is-medium" href="mailto:ivangorovoyyy@gmail.com" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </transition>
       </div>
@@ -23,7 +38,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .home {
   display: flex;
   align-items: center;
@@ -41,6 +56,18 @@ export default {
 }
 .fade-enter-active {
   animation: go 1s;
+}
+
+.icon {
+  font-size: 1.7em;
+  margin: 5px;
+  color: #00d1b2;
+  &:hover {
+    color: #00c4a7;
+  }
+  @media (max-width: 550px) {
+    margin: 2px;
+  }
 }
 
 @keyframes go {
