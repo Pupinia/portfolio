@@ -1,3 +1,3 @@
 # portfolio
 
-Репозиторий для портфолио - https://ivan-gorovoy.netlify.com/
+Репозиторий для портфолио - https://pupinia.github.io
